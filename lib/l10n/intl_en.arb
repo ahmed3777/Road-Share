@@ -1,13 +1,21 @@
 {
+    "ROADSHARE": "ROADSHARE",
+
     "Skip": "Skip",
-    "Next": "Next",
+    "Next": "NEXT",
     "Done": "Done",
     "Save": "Save",
     "Cancel": "Cancel",
+    "GetStarted": "Get Started!",
     "onboardingtitle1": "Request Ride",
-    "onboardingtitle2": "Get Picked Up",
-    "onboardingtitle3": "Rate Driver",
+    "onboardingtitle2": "Confirm Your Driver",
+    "onboardingtitle3": "Track your ride",
     "onboardingsubtitle1": "Request a ride get picked up by a nearby community driver",
     "onboardingsubtitle2": "Huge drivers network helps you find comforable, safe and cheap ride",
-    "onboardingsubtitle3": "Rate your driver and leave a review"
+    "onboardingsubtitle3": "Know your driver in advance and be able to view current location in real time on the map",
+
+    "Log_into_your_account": "Log into your account",
+    "Welcome_to_Roadshare": "Welcome to Roadshare, enter your details below to continue ordering",
+    "Enter_Phone": "Enter your Phone",
+    "Continue": "Continue"
 }

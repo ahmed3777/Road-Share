@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roadshare/features/auth/presentation/views/login_view.dart';
 import 'package:roadshare/features/home/presentation/home_view.dart';
 import 'package:roadshare/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:roadshare/features/splash/splash_view.dart';
@@ -11,12 +12,14 @@ class RouteGenerator {
     final args = settings.arguments;
 
     switch (settings.name) {
-        case SplashView.routeName:
-        return MaterialPageRoute(builder: (_) => const SplashView());
-         case OnBoardingView.routeName:
-        return MaterialPageRoute(builder: (_) => const OnBoardingView());
-      case HomeView.routeName:
-        return MaterialPageRoute(builder: (_) => const HomeView());
+
+        case SplashView.routeName: return MaterialPageRoute(builder: (_) => const SplashView());
+
+        case OnBoardingView.routeName: return MaterialPageRoute(builder: (_) => const OnBoardingView());
+
+        case LoginView.routeName: return MaterialPageRoute(builder: (_) => const LoginView());
+        
+        case HomeView.routeName: return MaterialPageRoute(builder: (_) => const HomeView());
       default:
       // If there is no such named route, return an error page
         return _errorRoute();

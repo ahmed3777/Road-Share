@@ -15,6 +15,10 @@ abstract class TextStyles {
     fontWeight: FontWeight.w600,
     fontSize: 13.sp,
   );
+   static TextStyle semiBold20 = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 20.sp,
+  );
   static TextStyle regular12 = TextStyle(
     fontWeight: FontWeight.normal,
     fontSize: 12.sp,

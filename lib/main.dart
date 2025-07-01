@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Location App',
           theme: ThemeData(
-            fontFamily: 'JosefinSans',
+            fontFamily: 'Poppins',
             colorScheme: ColorScheme.light(
               primary: AppColors.primaryOrange,
               secondary: AppColors.infoBlue,

@@ -23,10 +23,20 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+    "Continue": MessageLookupByLibrary.simpleMessage("Continue"),
     "Done": MessageLookupByLibrary.simpleMessage("Done"),
-    "Next": MessageLookupByLibrary.simpleMessage("Next"),
+    "Enter_Phone": MessageLookupByLibrary.simpleMessage("Enter your Phone"),
+    "GetStarted": MessageLookupByLibrary.simpleMessage("Get Started!"),
+    "Log_into_your_account": MessageLookupByLibrary.simpleMessage(
+      "Log into your account",
+    ),
+    "Next": MessageLookupByLibrary.simpleMessage("NEXT"),
+    "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
     "Save": MessageLookupByLibrary.simpleMessage("Save"),
     "Skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
+      "Welcome to Roadshare, enter your details below to continue ordering",
+    ),
     "onboardingsubtitle1": MessageLookupByLibrary.simpleMessage(
       "Request a ride get picked up by a nearby community driver",
     ),
@@ -34,10 +44,12 @@ class MessageLookup extends MessageLookupByLibrary {
       "Huge drivers network helps you find comforable, safe and cheap ride",
     ),
     "onboardingsubtitle3": MessageLookupByLibrary.simpleMessage(
-      "Rate your driver and leave a review",
+      "Know your driver in advance and be able to view current location in real time on the map",
     ),
     "onboardingtitle1": MessageLookupByLibrary.simpleMessage("Request Ride"),
-    "onboardingtitle2": MessageLookupByLibrary.simpleMessage("Get Picked Up"),
-    "onboardingtitle3": MessageLookupByLibrary.simpleMessage("Rate Driver"),
+    "onboardingtitle2": MessageLookupByLibrary.simpleMessage(
+      "Confirm Your Driver",
+    ),
+    "onboardingtitle3": MessageLookupByLibrary.simpleMessage("Track your ride"),
   };
 }

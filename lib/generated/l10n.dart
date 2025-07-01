@@ -54,14 +54,19 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `ROADSHARE`
+  String get ROADSHARE {
+    return Intl.message('ROADSHARE', name: 'ROADSHARE', desc: '', args: []);
+  }
+
   /// `Skip`
   String get Skip {
     return Intl.message('Skip', name: 'Skip', desc: '', args: []);
   }
 
-  /// `Next`
+  /// `NEXT`
   String get Next {
-    return Intl.message('Next', name: 'Next', desc: '', args: []);
+    return Intl.message('NEXT', name: 'Next', desc: '', args: []);
   }
 
   /// `Done`
@@ -79,6 +84,11 @@ class S {
     return Intl.message('Cancel', name: 'Cancel', desc: '', args: []);
   }
 
+  /// `Get Started!`
+  String get GetStarted {
+    return Intl.message('Get Started!', name: 'GetStarted', desc: '', args: []);
+  }
+
   /// `Request Ride`
   String get onboardingtitle1 {
     return Intl.message(
@@ -89,20 +99,20 @@ class S {
     );
   }
 
-  /// `Get Picked Up`
+  /// `Confirm Your Driver`
   String get onboardingtitle2 {
     return Intl.message(
-      'Get Picked Up',
+      'Confirm Your Driver',
       name: 'onboardingtitle2',
       desc: '',
       args: [],
     );
   }
 
-  /// `Rate Driver`
+  /// `Track your ride`
   String get onboardingtitle3 {
     return Intl.message(
-      'Rate Driver',
+      'Track your ride',
       name: 'onboardingtitle3',
       desc: '',
       args: [],
@@ -129,14 +139,49 @@ class S {
     );
   }
 
-  /// `Rate your driver and leave a review`
+  /// `Know your driver in advance and be able to view current location in real time on the map`
   String get onboardingsubtitle3 {
     return Intl.message(
-      'Rate your driver and leave a review',
+      'Know your driver in advance and be able to view current location in real time on the map',
       name: 'onboardingsubtitle3',
       desc: '',
       args: [],
     );
+  }
+
+  /// `Log into your account`
+  String get Log_into_your_account {
+    return Intl.message(
+      'Log into your account',
+      name: 'Log_into_your_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to Roadshare, enter your details below to continue ordering`
+  String get Welcome_to_Roadshare {
+    return Intl.message(
+      'Welcome to Roadshare, enter your details below to continue ordering',
+      name: 'Welcome_to_Roadshare',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your Phone`
+  String get Enter_Phone {
+    return Intl.message(
+      'Enter your Phone',
+      name: 'Enter_Phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue`
+  String get Continue {
+    return Intl.message('Continue', name: 'Continue', desc: '', args: []);
   }
 }
 

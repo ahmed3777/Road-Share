@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:roadshare/core/app/app_color.dart';
+import 'package:roadshare/core/app/app_dimensions.dart';
 import 'package:roadshare/core/app/app_text_styles.dart';
 import 'package:roadshare/core/utils/app_images.dart';
 import 'package:roadshare/features/onboarding/presentation/views/onboarding_view.dart';
@@ -27,8 +27,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
     super.dispose();
   }
    void excuteNavigation() async {
-    Future.delayed(const Duration(seconds:3), () async {
-
+    Future.delayed(const Duration(seconds:5), () async {
       try {
          Navigator.pushReplacementNamed(context, OnBoardingView.routeName);
          // Navigator.pushReplacementNamed(context, HomeView.routeName);
@@ -48,10 +47,9 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+    return  Center(
       child: Column(
-        spacing: 10,
+       spacing: 10,
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -60,11 +58,20 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
               shape: BoxShape.circle,
               color: Colors.white,
             ),
-            child: SvgPicture.asset(
-              Assets.imagesSpl,
-            ),
+            child: Image.asset(Assets.imagesSplash),
           ),
-          Text('Welcome to RoadShare',style: TextStyles.bold24.copyWith(color: AppColors.darkOrange),)
+          AnimatedBuilder(
+            animation: offset,
+            builder: (context, child) {
+              return SlideTransition(
+                position: offset,
+                child: child,
+              );
+            },
+            child: Text('Welcome to RoadShare',
+             style:TextStyles.bold20.copyWith(color: AppColors.routePolyline),
+          ),
+          ),
         ],
       ),
     );

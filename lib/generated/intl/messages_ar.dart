@@ -23,10 +23,20 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+    "Continue": MessageLookupByLibrary.simpleMessage("استمر"),
     "Done": MessageLookupByLibrary.simpleMessage("تم"),
+    "Enter_Phone": MessageLookupByLibrary.simpleMessage("ادخل رقم الهاتف"),
+    "GetStarted": MessageLookupByLibrary.simpleMessage("ابدأ ألان!"),
+    "Log_into_your_account": MessageLookupByLibrary.simpleMessage(
+      "تسجيل الدخول في حسابك",
+    ),
     "Next": MessageLookupByLibrary.simpleMessage("التالي"),
+    "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
     "Save": MessageLookupByLibrary.simpleMessage("حفظ"),
     "Skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+    "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
+      "مرحبا بك في Roadshare, ادخل التفاصيل التالية للمتابعة",
+    ),
     "onboardingsubtitle1": MessageLookupByLibrary.simpleMessage(
       "طلب رحلة واستلامها من سائق مجاور",
     ),
@@ -34,7 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "شبكة السائقين كبيرة تساعدك في الحصول على رحلة مريحة وسلامة ومناسبة",
     ),
     "onboardingsubtitle3": MessageLookupByLibrary.simpleMessage(
-      "تقييم السائق واترك تقييم",
+      "تعرف على سائقك في المساء وكيفية عرض موقعك في الوقت الحالي على الخريطة",
     ),
     "onboardingtitle1": MessageLookupByLibrary.simpleMessage("طلب رحلة"),
     "onboardingtitle2": MessageLookupByLibrary.simpleMessage("استلام الرحلة"),
