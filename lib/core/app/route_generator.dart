@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:roadshare/features/auth/presentation/views/login_view.dart';
+import 'package:roadshare/features/auth/presentation/views/signup_view.dart';
 import 'package:roadshare/features/home/presentation/home_view.dart';
 import 'package:roadshare/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:roadshare/features/splash/splash_view.dart';
@@ -18,6 +19,9 @@ class RouteGenerator {
         case OnBoardingView.routeName: return MaterialPageRoute(builder: (_) => const OnBoardingView());
 
         case LoginView.routeName: return MaterialPageRoute(builder: (_) => const LoginView());
+
+                case SignupView.routeName: return MaterialPageRoute(builder: (_) => const SignupView());
+
         
         case HomeView.routeName: return MaterialPageRoute(builder: (_) => const HomeView());
       default:

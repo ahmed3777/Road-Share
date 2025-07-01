@@ -25,17 +25,25 @@ class MessageLookup extends MessageLookupByLibrary {
     "Cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
     "Continue": MessageLookupByLibrary.simpleMessage("استمر"),
     "Done": MessageLookupByLibrary.simpleMessage("تم"),
+    "DontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
+      "ليس لديك حساب؟ ",
+    ),
     "Enter_Phone": MessageLookupByLibrary.simpleMessage("ادخل رقم الهاتف"),
     "GetStarted": MessageLookupByLibrary.simpleMessage("ابدأ ألان!"),
+    "Log_in": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "Log_into_your_account": MessageLookupByLibrary.simpleMessage(
       "تسجيل الدخول في حسابك",
     ),
     "Next": MessageLookupByLibrary.simpleMessage("التالي"),
     "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
     "Save": MessageLookupByLibrary.simpleMessage("حفظ"),
+    "Sign_up": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
     "Skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
       "مرحبا بك في Roadshare, ادخل التفاصيل التالية للمتابعة",
+    ),
+    "create_your_account": MessageLookupByLibrary.simpleMessage(
+      "انشاء حساب جديد",
     ),
     "onboardingsubtitle1": MessageLookupByLibrary.simpleMessage(
       "طلب رحلة واستلامها من سائق مجاور",

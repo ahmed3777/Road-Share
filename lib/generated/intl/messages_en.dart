@@ -25,17 +25,31 @@ class MessageLookup extends MessageLookupByLibrary {
     "Cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "Continue": MessageLookupByLibrary.simpleMessage("Continue"),
     "Done": MessageLookupByLibrary.simpleMessage("Done"),
+    "DontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
+      "Don’t have an account? ",
+    ),
     "Enter_Phone": MessageLookupByLibrary.simpleMessage("Enter your Phone"),
     "GetStarted": MessageLookupByLibrary.simpleMessage("Get Started!"),
+    "Log_in": MessageLookupByLibrary.simpleMessage("Log in"),
     "Log_into_your_account": MessageLookupByLibrary.simpleMessage(
       "Log into your account",
     ),
     "Next": MessageLookupByLibrary.simpleMessage("NEXT"),
     "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
     "Save": MessageLookupByLibrary.simpleMessage("Save"),
+    "Sign_up": MessageLookupByLibrary.simpleMessage("Sign up"),
     "Skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
       "Welcome to Roadshare, enter your details below to continue ordering",
+    ),
+    "continue_with_apple": MessageLookupByLibrary.simpleMessage(
+      "Continue with Apple",
+    ),
+    "continue_with_google": MessageLookupByLibrary.simpleMessage(
+      "Continue with Google",
+    ),
+    "create_your_account": MessageLookupByLibrary.simpleMessage(
+      "Create your account",
     ),
     "onboardingsubtitle1": MessageLookupByLibrary.simpleMessage(
       "Request a ride get picked up by a nearby community driver",

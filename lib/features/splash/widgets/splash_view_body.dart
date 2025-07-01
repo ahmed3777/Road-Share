@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:roadshare/core/app/app_color.dart';
-import 'package:roadshare/core/app/app_dimensions.dart';
 import 'package:roadshare/core/app/app_text_styles.dart';
 import 'package:roadshare/core/utils/app_images.dart';
 import 'package:roadshare/features/onboarding/presentation/views/onboarding_view.dart';

@@ -149,6 +149,11 @@ class S {
     );
   }
 
+  /// `Log in`
+  String get Log_in {
+    return Intl.message('Log in', name: 'Log_in', desc: '', args: []);
+  }
+
   /// `Log into your account`
   String get Log_into_your_account {
     return Intl.message(
@@ -182,6 +187,51 @@ class S {
   /// `Continue`
   String get Continue {
     return Intl.message('Continue', name: 'Continue', desc: '', args: []);
+  }
+
+  /// `Don’t have an account? `
+  String get DontHaveAnAccount {
+    return Intl.message(
+      'Don’t have an account? ',
+      name: 'DontHaveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up`
+  String get Sign_up {
+    return Intl.message('Sign up', name: 'Sign_up', desc: '', args: []);
+  }
+
+  /// `Create your account`
+  String get create_your_account {
+    return Intl.message(
+      'Create your account',
+      name: 'create_your_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue with Google`
+  String get continue_with_google {
+    return Intl.message(
+      'Continue with Google',
+      name: 'continue_with_google',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue with Apple`
+  String get continue_with_apple {
+    return Intl.message(
+      'Continue with Apple',
+      name: 'continue_with_apple',
+      desc: '',
+      args: [],
+    );
   }
 }
 

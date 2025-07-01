@@ -13,10 +13,16 @@
     "onboardingsubtitle2": "شبكة السائقين كبيرة تساعدك في الحصول على رحلة مريحة وسلامة ومناسبة",
     "onboardingsubtitle3": "تعرف على سائقك في المساء وكيفية عرض موقعك في الوقت الحالي على الخريطة",
 
+    "Log_in": "تسجيل الدخول",
     "Log_into_your_account": "تسجيل الدخول في حسابك",
     "Welcome_to_Roadshare": "مرحبا بك في Roadshare, ادخل التفاصيل التالية للمتابعة",
      "Enter_Phone": "ادخل رقم الهاتف",
-     "Continue": "استمر"
+     "Continue": "استمر",
+     "DontHaveAnAccount": "ليس لديك حساب؟ ",
+
+     
+     "Sign_up": "انشاء حساب",
+     "create_your_account": "انشاء حساب جديد"
 
 
 }

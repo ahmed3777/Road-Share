@@ -4,21 +4,21 @@ import 'package:roadshare/core/app/app_text_styles.dart';
 import 'package:roadshare/core/utils/app_images.dart';
 import 'package:roadshare/core/widgets/custom_button.dart';
 import 'package:roadshare/core/widgets/custom_login_text_field.dart';
-import 'package:roadshare/features/auth/presentation/views/signup_view.dart';
+import 'package:roadshare/features/auth/presentation/views/login_view.dart';
 import 'package:roadshare/features/auth/presentation/views/widgets/social_login.dart';
 import 'package:roadshare/generated/l10n.dart';
 
-class LoginViewBody extends StatefulWidget {
-  const LoginViewBody({super.key});
+class SignupViewBody extends StatefulWidget {
+  const SignupViewBody({super.key});
 
   @override
-  State<LoginViewBody> createState() => _LoginViewBodyState();
+  State<SignupViewBody> createState() => _SignupViewBodyState();
 }
 
-class _LoginViewBodyState extends State<LoginViewBody> {
+class _SignupViewBodyState extends State<SignupViewBody> {
   @override
   Widget build(BuildContext context) {
-    return  Padding(
+    return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,7 +34,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
 
                 Text(S. of(context).ROADSHARE, style: TextStyles.semiBold16.copyWith(color: AppColors.routePolyline),),
                 const  SizedBox(height: 20,),
-                Text(S. of(context).Log_into_your_account, style: TextStyles.semiBold20.copyWith(color: AppColors.darkBg),),
+                Text(S. of(context).create_your_account, style: TextStyles.semiBold20.copyWith(color: AppColors.darkBg),),
                const SizedBox(height: 10,),
                 SizedBox(
                   width: 300,
@@ -67,13 +67,11 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                           ],
                   ),
             const  SizedBox(height: 25,),
-            SocialLogin(
+            SocialLogin( 
               onPressed: () {
-               Navigator.pushNamed(context, SignupView.routeName);
-
+                Navigator.pushNamed(context, LoginView.routeName);
               },
-              text: S.of(context).Sign_up,
-            ),
+              text: S.of(context).Log_in,),
           ],
       ),
     );

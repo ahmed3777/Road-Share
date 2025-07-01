@@ -14,8 +14,17 @@
     "onboardingsubtitle2": "Huge drivers network helps you find comforable, safe and cheap ride",
     "onboardingsubtitle3": "Know your driver in advance and be able to view current location in real time on the map",
 
+    "Log_in": "Log in",
     "Log_into_your_account": "Log into your account",
     "Welcome_to_Roadshare": "Welcome to Roadshare, enter your details below to continue ordering",
     "Enter_Phone": "Enter your Phone",
-    "Continue": "Continue"
+    "Continue": "Continue",
+    "DontHaveAnAccount": "Don’t have an account? ",
+
+    "Sign_up": "Sign up",
+    "create_your_account": "Create your account",
+    "continue_with_google": "Continue with Google",
+    "continue_with_apple": "Continue with Apple"
+
+
 }
