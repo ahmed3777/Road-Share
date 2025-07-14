@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+
+import 'package:roadshare/core/app/app_dimensions.dart';
 import 'package:roadshare/core/app/app_text_styles.dart';
+import 'package:roadshare/core/services/shared_preferences_singleton.dart';
+import 'package:roadshare/core/utils/constants.dart';
 import 'package:roadshare/features/auth/presentation/views/login_view.dart';
 import 'package:roadshare/generated/l10n.dart';
 
@@ -18,7 +22,7 @@ class PageViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding:  EdgeInsets.all(AppDimensions.mediumPadding(context)),
       child: Column(
         children: [
               Row(
@@ -27,7 +31,8 @@ class PageViewItem extends StatelessWidget {
                     visible: isvisible,
                     child: TextButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, LoginView.routeName);
+                        SharedPref.setData(Constants.kIsOnboardingView, true) ;
+                        Navigator.pushReplacementNamed(context, LoginView.routeName);
                       },
                       child: Text(S.of(context).Skip),
                     ),

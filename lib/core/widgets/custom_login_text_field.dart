@@ -4,7 +4,8 @@ import 'package:roadshare/core/utils/app_images.dart';
 import 'package:roadshare/generated/l10n.dart';
 
 class CustomLoginTextField extends StatelessWidget {
-  const CustomLoginTextField({super.key});
+  const CustomLoginTextField({super.key, required this.phoneController});
+final TextEditingController phoneController ;
 
   @override
   Widget build(BuildContext context) {
@@ -42,6 +43,7 @@ Container(
         child: SizedBox(
           height: 30,
           child: TextFormField(
+            controller: phoneController ,
             decoration: InputDecoration(
               border: InputBorder.none,
               hintText: S.of(context).Enter_Phone,

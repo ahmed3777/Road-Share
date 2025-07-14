@@ -19,10 +19,16 @@
      "Enter_Phone": "ادخل رقم الهاتف",
      "Continue": "استمر",
      "DontHaveAnAccount": "ليس لديك حساب؟ ",
-
+          "or": "او",
      
      "Sign_up": "انشاء حساب",
-     "create_your_account": "انشاء حساب جديد"
+     "create_your_account": "انشاء حساب جديد",
+      "continue_with_google": "استمر بواسطة جوجل",
+     "continue_with_apple": "استمر بواسطة ابل",
+
+
+     "SMS_Code": "رمز SMS"
+    
 
 
 }

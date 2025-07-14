@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:roadshare/core/services/get_it_services.dart';
+import 'package:roadshare/features/auth/presentation/cubit/cubit/sign_in_cubit.dart';
 import 'package:roadshare/features/auth/presentation/views/widgets/signup_view_body.dart';
 
 class SignupView extends StatelessWidget {
@@ -6,9 +9,14 @@ class SignupView extends StatelessWidget {
   static const routeName = 'signup';
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       resizeToAvoidBottomInset: false,
-      body: SafeArea(child: SignupViewBody()),
+      body: BlocProvider(
+        create: (context) => getIt<SignInCubit>(),
+        child: const SafeArea(
+          child: SignupViewBody(),
+        ),
+      ),
     );
   }
 }

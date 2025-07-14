@@ -19,12 +19,14 @@
     "Welcome_to_Roadshare": "Welcome to Roadshare, enter your details below to continue ordering",
     "Enter_Phone": "Enter your Phone",
     "Continue": "Continue",
+    "or": "or",
     "DontHaveAnAccount": "Don’t have an account? ",
 
     "Sign_up": "Sign up",
     "create_your_account": "Create your account",
     "continue_with_google": "Continue with Google",
-    "continue_with_apple": "Continue with Apple"
-
+    "continue_with_apple": "Continue with Apple",
+    
+    "SMS_Code": "SMS Code"
 
 }

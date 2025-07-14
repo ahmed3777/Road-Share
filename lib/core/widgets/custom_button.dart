@@ -4,8 +4,8 @@ import 'package:roadshare/core/app/app_text_styles.dart';
 import 'package:roadshare/generated/l10n.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
-
+  const CustomButton({super.key, required this.onPress});
+  final VoidCallback onPress; 
   @override
   Widget build(BuildContext context) {
     return  Container(
@@ -16,7 +16,9 @@ class CustomButton extends StatelessWidget {
                  borderRadius: BorderRadius.circular(20)
               ),
                child: TextButton(
-                onPressed: (){},
+                onPressed: (){
+                  onPress();
+                },
                   child: Text(S.of(context).Continue, style: TextStyles.semiBold16.copyWith(color: AppColors.pureWhite),),
                   
                    ),

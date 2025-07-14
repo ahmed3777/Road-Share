@@ -36,11 +36,18 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "Next": MessageLookupByLibrary.simpleMessage("التالي"),
     "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
+    "SMS_Code": MessageLookupByLibrary.simpleMessage("رمز SMS"),
     "Save": MessageLookupByLibrary.simpleMessage("حفظ"),
     "Sign_up": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
     "Skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
       "مرحبا بك في Roadshare, ادخل التفاصيل التالية للمتابعة",
+    ),
+    "continue_with_apple": MessageLookupByLibrary.simpleMessage(
+      "استمر بواسطة ابل",
+    ),
+    "continue_with_google": MessageLookupByLibrary.simpleMessage(
+      "استمر بواسطة جوجل",
     ),
     "create_your_account": MessageLookupByLibrary.simpleMessage(
       "انشاء حساب جديد",
@@ -57,5 +64,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingtitle1": MessageLookupByLibrary.simpleMessage("طلب رحلة"),
     "onboardingtitle2": MessageLookupByLibrary.simpleMessage("استلام الرحلة"),
     "onboardingtitle3": MessageLookupByLibrary.simpleMessage("تقييم السائق"),
+    "or": MessageLookupByLibrary.simpleMessage("او"),
   };
 }

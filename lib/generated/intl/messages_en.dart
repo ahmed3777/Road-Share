@@ -36,6 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "Next": MessageLookupByLibrary.simpleMessage("NEXT"),
     "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
+    "SMS_Code": MessageLookupByLibrary.simpleMessage("SMS Code"),
     "Save": MessageLookupByLibrary.simpleMessage("Save"),
     "Sign_up": MessageLookupByLibrary.simpleMessage("Sign up"),
     "Skip": MessageLookupByLibrary.simpleMessage("Skip"),
@@ -65,5 +66,6 @@ class MessageLookup extends MessageLookupByLibrary {
       "Confirm Your Driver",
     ),
     "onboardingtitle3": MessageLookupByLibrary.simpleMessage("Track your ride"),
+    "or": MessageLookupByLibrary.simpleMessage("or"),
   };
 }

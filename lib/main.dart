@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:roadshare/core/app/app_color.dart';
+import 'package:roadshare/core/services/get_it_services.dart';
+import 'package:roadshare/core/services/shared_preferences_singleton.dart';
 import 'package:roadshare/features/splash/splash_view.dart';
 import 'package:roadshare/firebase_options.dart';
 import 'package:roadshare/generated/l10n.dart';
@@ -10,6 +12,10 @@ import 'core/app/route_generator.dart';
 
 void main() async {
     WidgetsFlutterBinding.ensureInitialized();
+
+    await SharedPref.init();
+      setupGetIt();
+
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

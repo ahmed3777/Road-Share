@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:roadshare/features/auth/presentation/views/login_view.dart';
+import 'package:roadshare/features/auth/presentation/views/otp_view.dart';
 import 'package:roadshare/features/auth/presentation/views/signup_view.dart';
 import 'package:roadshare/features/home/presentation/home_view.dart';
 import 'package:roadshare/features/onboarding/presentation/views/onboarding_view.dart';
@@ -20,9 +21,13 @@ class RouteGenerator {
 
         case LoginView.routeName: return MaterialPageRoute(builder: (_) => const LoginView());
 
-                case SignupView.routeName: return MaterialPageRoute(builder: (_) => const SignupView());
-
-        
+        case SignupView.routeName: return MaterialPageRoute(builder: (_) => const SignupView());
+              
+          case OtpView.routeName:
+            final verificationId = args as String;
+            return MaterialPageRoute(
+              builder: (_) => OtpView(verificationId: verificationId),
+            );
         case HomeView.routeName: return MaterialPageRoute(builder: (_) => const HomeView());
       default:
       // If there is no such named route, return an error page

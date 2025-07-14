@@ -1,9 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:roadshare/core/app/app_color.dart';
 import 'package:roadshare/core/app/app_text_styles.dart';
 import 'package:roadshare/core/utils/app_images.dart';
+import 'package:roadshare/features/auth/presentation/cubit/cubit/sign_in_cubit.dart';
 import 'package:roadshare/features/auth/presentation/views/widgets/social_login_button.dart';
 import 'package:roadshare/generated/l10n.dart';
 
@@ -17,12 +19,8 @@ class SocialLogin extends StatelessWidget {
     return Column(
       children: [
         SocialButton(
-           
             onPressed: () {
-              // context.read<SignUpCubit>().signinWithGoogle();
-              // if (context.read<SignUpCubit>().state is SignUpLoading) {
-              //   const CircularProgressIndicator();
-              // }
+              context.read<SignInCubit>().signInWithGoogle();
             }, text: S.of(context).continue_with_google, iconPath: Assets.imagesIconsGoogle,),
         SizedBox(
           height: 16.w,
@@ -50,7 +48,7 @@ class SocialLogin extends StatelessWidget {
                 style: TextStyles.semiBold16.copyWith(color: AppColors.infoBlue),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                    onPressed!();
+                    onPressed();
                   },
               ),
             ],

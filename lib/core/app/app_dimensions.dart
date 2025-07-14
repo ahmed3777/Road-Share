@@ -1,43 +1,76 @@
 import 'package:flutter/material.dart';
+
 class AppDimensions {
-  // Ensure this class cannot be instantiated
   AppDimensions._();
 
-  // Device Dimensions
-  static double screenWidth(BuildContext context) => MediaQuery.sizeOf(context).width;
-  static double screenHeight(BuildContext context) => MediaQuery.sizeOf(context).height;
+  /// ✅ Screen dimensions
+  static double screenWidth(BuildContext context) =>
+      MediaQuery.sizeOf(context).width;
 
-  // Common Margins
-  static const double smallMargin = 8.0;
-  static const double mediumMargin = 16.0;
-  static const double largeMargin = 24.0;
-  static const double extraLargeMargin = 32.0;
+  static double screenHeight(BuildContext context) =>
+      MediaQuery.sizeOf(context).height;
 
-  // Common Paddings
-  static const double smallPadding = 8.0;
-  static const double mediumPadding = 16.0;
-  static const double largePadding = 24.0;
-  static const double extraLargePadding = 32.0;
+  /// ✅ Get width as percentage
+  static double widthPercentage(BuildContext context, double percentage) =>
+      screenWidth(context) * percentage;
 
-  // Common Spacing (Gaps between widgets)
-  static const double smallSpacing = 4.0;
-  static const double mediumSpacing = 12.0;
-  static const double largeSpacing = 20.0;
+  /// ✅ Get height as percentage
+  static double heightPercentage(BuildContext context, double percentage) =>
+      screenHeight(context) * percentage;
 
-  // Border Radius
-  static const double smallRadius = 8.0;
-  static const double mediumRadius = 16.0;
-  static const double largeRadius = 24.0;
-  static const double extraLargeRadius = 50.0;
+  /// ✅ Padding & Margin (relative)
+  static double smallPadding(BuildContext context) =>
+      widthPercentage(context, 0.02); // ~2% of width
 
-  // Custom percentages of screen size
-  /// Returns a value that is a given percentage of the screen width.
-  ///
-  /// [percentage] should be a value between 0.0 and 1.0, where 0.0 is 0% and 1.0 is 100%.
-  ///
-  /// For example, to get a value that is 25% of the screen width, you would call:
-  ///
-  /// `widthPercentage(context, 0.25)`.
-  static double widthPercentage(BuildContext context, double percentage) =>  screenWidth(context) * percentage;
-  static double heightPercentage(BuildContext context, double percentage) => screenHeight(context) * percentage;
+  static double mediumPadding(BuildContext context) =>
+      widthPercentage(context, 0.04); // ~4% of width
+
+  static double largePadding(BuildContext context) =>
+      widthPercentage(context, 0.06); // ~6% of width
+
+  /// ✅ Spacing (gap between widgets)
+  static double smallSpacing(BuildContext context) =>
+      heightPercentage(context, 0.01); // ~1% of height
+
+  static double mediumSpacing(BuildContext context) =>
+      heightPercentage(context, 0.02); // ~2% of height
+
+  static double largeSpacing(BuildContext context) =>
+      heightPercentage(context, 0.03); // ~3% of height
+
+      
+
+  /// ✅ Border Radius
+  static double smallRadius(BuildContext context) =>
+      widthPercentage(context, 0.02); // 2% of width
+
+  static double mediumRadius(BuildContext context) =>
+      widthPercentage(context, 0.04); // 4% of width
+
+  static double largeRadius(BuildContext context) =>
+      widthPercentage(context, 0.06); // 6% of width
+
+  /// ✅ Logo / Image sizes
+  static double logoWidth(BuildContext context) =>
+      widthPercentage(context, 0.45); // 45% of screen width
+
+  static double logoHeight(BuildContext context) =>
+      heightPercentage(context, 0.15); // 15% of screen height
+
+  /// ✅ Common widget widths
+  static double textContainerWidth(BuildContext context) =>
+      widthPercentage(context, 0.8); // 80% of screen width
+
+  static double buttonWidth(BuildContext context) =>
+      widthPercentage(context, 0.9); // 90% of screen width
+
+  static double buttonHeight(BuildContext context) =>
+      heightPercentage(context, 0.065); // 6.5% of screen height
+
+  /// ✅ Generic SizedBox helpers
+  static SizedBox sizedBoxWidth(BuildContext context, double percentage) =>
+      SizedBox(width: widthPercentage(context, percentage));
+
+  static SizedBox sizedBoxHeight(BuildContext context, double percentage) =>
+      SizedBox(height: heightPercentage(context, percentage));
 }

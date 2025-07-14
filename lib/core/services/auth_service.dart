@@ -16,5 +16,35 @@ class FirebaseAuthService {
   return (await FirebaseAuth.instance.signInWithCredential(credential)).user!;
 }
 
+  // ✅ Sign In with Phone
+  Future<void> signInWithPhone({
+    required String phoneNumber,
+    required Function(PhoneAuthCredential) onVerificationCompleted,
+    required Function(FirebaseAuthException) onVerificationFailed,
+    required Function(String, int?) onCodeSent,
+    required Function(String) onCodeAutoRetrievalTimeout,
+  }) async {
+    await FirebaseAuth.instance.verifyPhoneNumber(
+      phoneNumber: phoneNumber,
+      timeout: const Duration(seconds: 60),
+      verificationCompleted: onVerificationCompleted,
+      verificationFailed: onVerificationFailed,
+      codeSent: onCodeSent,
+      codeAutoRetrievalTimeout: onCodeAutoRetrievalTimeout,
+    );
+  }
 
+  // ✅ بعد كده لما يجيلك الـ SMS Code:
+  Future<User?> signInWithSmsCode({
+    required String verificationId,
+    required String smsCode,
+  }) async {
+    final credential = PhoneAuthProvider.credential(
+      verificationId: verificationId,
+      smsCode: smsCode,
+    );
+
+    return (await FirebaseAuth.instance.signInWithCredential(credential)).user;
+  }
 }
+

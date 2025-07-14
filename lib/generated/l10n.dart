@@ -189,6 +189,11 @@ class S {
     return Intl.message('Continue', name: 'Continue', desc: '', args: []);
   }
 
+  /// `or`
+  String get or {
+    return Intl.message('or', name: 'or', desc: '', args: []);
+  }
+
   /// `Don’t have an account? `
   String get DontHaveAnAccount {
     return Intl.message(
@@ -232,6 +237,11 @@ class S {
       desc: '',
       args: [],
     );
+  }
+
+  /// `SMS Code`
+  String get SMS_Code {
+    return Intl.message('SMS Code', name: 'SMS_Code', desc: '', args: []);
   }
 }
 
