@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:roadshare/core/app/app_color.dart';
 import 'package:roadshare/core/app/app_text_styles.dart';
 import 'package:roadshare/core/utils/app_images.dart';
-import 'package:roadshare/features/auth/presentation/cubit/cubit/sign_in_cubit.dart';
+import 'package:roadshare/features/auth/presentation/cubit/sinIn_cubit/sign_in_cubit.dart';
 import 'package:roadshare/features/auth/presentation/views/widgets/social_login_button.dart';
 import 'package:roadshare/generated/l10n.dart';
 

@@ -28,16 +28,48 @@ class MessageLookup extends MessageLookupByLibrary {
     "DontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Don’t have an account? ",
     ),
+    "Email_must_be_at_least_6_characters": MessageLookupByLibrary.simpleMessage(
+      "Email must be at least 6 characters",
+    ),
+    "Email_must_be_valid": MessageLookupByLibrary.simpleMessage(
+      "Email must be valid",
+    ),
+    "Email_must_contain_only_letters_and_spaces":
+        MessageLookupByLibrary.simpleMessage(
+          "Email must contain only letters and spaces",
+        ),
+    "Email_required": MessageLookupByLibrary.simpleMessage("Email required"),
+    "EnterYourEmail": MessageLookupByLibrary.simpleMessage("Enter your email"),
+    "EnterYourName": MessageLookupByLibrary.simpleMessage("Enter your name"),
+    "EnterYourPhone": MessageLookupByLibrary.simpleMessage("Enter your Phone"),
     "Enter_Phone": MessageLookupByLibrary.simpleMessage("Enter your Phone"),
     "GetStarted": MessageLookupByLibrary.simpleMessage("Get Started!"),
     "Log_in": MessageLookupByLibrary.simpleMessage("Log in"),
     "Log_into_your_account": MessageLookupByLibrary.simpleMessage(
       "Log into your account",
     ),
+    "Name_must_be_at_least_3_characters": MessageLookupByLibrary.simpleMessage(
+      "Name must be at least 3 characters",
+    ),
+    "Name_must_contain_only_letters_and_spaces":
+        MessageLookupByLibrary.simpleMessage(
+          "Name must contain only letters and spaces",
+        ),
+    "Name_required": MessageLookupByLibrary.simpleMessage("Name required"),
     "Next": MessageLookupByLibrary.simpleMessage("NEXT"),
+    "Phone_must_be_at_least_11_characters":
+        MessageLookupByLibrary.simpleMessage(
+          "Phone must be at least 11 characters",
+        ),
+    "Phone_must_be_valid": MessageLookupByLibrary.simpleMessage(
+      "Phone must be valid",
+    ),
+    "Phone_required": MessageLookupByLibrary.simpleMessage("Phone required"),
     "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
+    "Role_required": MessageLookupByLibrary.simpleMessage("Role required"),
     "SMS_Code": MessageLookupByLibrary.simpleMessage("SMS Code"),
     "Save": MessageLookupByLibrary.simpleMessage("Save"),
+    "SelectRole": MessageLookupByLibrary.simpleMessage("Select Role"),
     "Sign_up": MessageLookupByLibrary.simpleMessage("Sign up"),
     "Skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
@@ -52,6 +84,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "create_your_account": MessageLookupByLibrary.simpleMessage(
       "Create your account",
     ),
+    "driver": MessageLookupByLibrary.simpleMessage("Driver"),
+    "isAvailable": MessageLookupByLibrary.simpleMessage("Available"),
     "onboardingsubtitle1": MessageLookupByLibrary.simpleMessage(
       "Request a ride get picked up by a nearby community driver",
     ),
@@ -67,5 +101,6 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingtitle3": MessageLookupByLibrary.simpleMessage("Track your ride"),
     "or": MessageLookupByLibrary.simpleMessage("or"),
+    "rider": MessageLookupByLibrary.simpleMessage("Rider"),
   };
 }

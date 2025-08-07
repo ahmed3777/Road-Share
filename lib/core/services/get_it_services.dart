@@ -2,9 +2,14 @@
 
 import 'package:get_it/get_it.dart';
 import 'package:roadshare/core/services/auth_service.dart';
+import 'package:roadshare/core/services/database_services.dart';
+import 'package:roadshare/core/services/firestore_services.dart';
+import 'package:roadshare/features/auth/data/models/app_user.dart';
 import 'package:roadshare/features/auth/data/repos/auth_repo_imp.dart';
 import 'package:roadshare/features/auth/domin/repos/auth_repo.dart';
-import 'package:roadshare/features/auth/presentation/cubit/cubit/sign_in_cubit.dart';
+import 'package:roadshare/features/auth/presentation/cubit/profile/profile_cubit.dart';
+import 'package:roadshare/features/auth/presentation/cubit/sinIn_cubit/sign_in_cubit.dart';
+import 'package:roadshare/features/home/presentation/cubit/cubit/home_cubit.dart';
 
 final GetIt getIt = GetIt.instance;
 
@@ -13,6 +18,10 @@ void setupGetIt() {
  // getIt.registerLazySingleton<ApiService>(() => ApiService());
   getIt.registerLazySingleton<FirebaseAuthService>(
     () => FirebaseAuthService(),
+  );
+
+   getIt.registerLazySingleton<DatabaseServices>(
+    () => FirestoreServices(),
   );
   //getIt.registerLazySingleton<NotificationService>(
   //  () => NotificationService(getIt<ApiService>()),
@@ -24,8 +33,10 @@ void setupGetIt() {
   ///auth
   getIt.registerLazySingleton<AuthRepoImp>(
     () => AuthRepoImp(
+        databaseServices: getIt<DatabaseServices>(),
        // apiService: getIt<ApiService>(),
         firebaseAuthService: getIt<FirebaseAuthService>()),
+
       );
     getIt.registerLazySingleton<AuthRepo>(() => getIt<AuthRepoImp>());
      //getIt.registerFactory<SignUpCubit>(() => SignUpCubit(getIt<AuthRepo>()));
@@ -35,7 +46,11 @@ void setupGetIt() {
   // getIt.registerLazySingleton<HomeRepo>(() => getIt<HomeRepoImp>());
   // getIt.registerLazySingleton<HomeRepoImp>(
   //     () => HomeRepoImp(apiService: getIt<ApiService>()));
-  // getIt.registerFactory<BannerCubit>(() => BannerCubit(getIt<HomeRepo>()));
+  getIt.registerFactory<HomeCubit>(() => HomeCubit());
+
+    getIt.registerFactoryParam<ProfileCubit, AppUser, void>(
+      (user, _) => ProfileCubit(getIt<AuthRepo>(), user),
+    );
   // getIt
   //     .registerFactory<CountriesCubit>(() => CountriesCubit(getIt<HomeRepo>()));
   // getIt.registerFactory<CitiesCubit>(() => CitiesCubit(getIt<HomeRepo>()));

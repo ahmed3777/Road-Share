@@ -28,16 +28,52 @@ class MessageLookup extends MessageLookupByLibrary {
     "DontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "ليس لديك حساب؟ ",
     ),
+    "Email_must_be_at_least_6_characters": MessageLookupByLibrary.simpleMessage(
+      "البريد الالكتروني يجب ان يكون اكثر من 6 حروف",
+    ),
+    "Email_must_be_valid": MessageLookupByLibrary.simpleMessage(
+      "البريد الالكتروني يجب ان يكون صالح",
+    ),
+    "Email_must_contain_only_letters_and_spaces":
+        MessageLookupByLibrary.simpleMessage(
+          "البريد الالكتروني يجب ان يحتوي على حروف فقط ومسافات فقط",
+        ),
+    "Email_required": MessageLookupByLibrary.simpleMessage(
+      "البريد الالكتروني مطلوب",
+    ),
+    "EnterYourEmail": MessageLookupByLibrary.simpleMessage(
+      "ادخل بريدك الالكتروني",
+    ),
+    "EnterYourName": MessageLookupByLibrary.simpleMessage("ادخل اسمك"),
+    "EnterYourPhone": MessageLookupByLibrary.simpleMessage("ادخل رقم الهاتف"),
     "Enter_Phone": MessageLookupByLibrary.simpleMessage("ادخل رقم الهاتف"),
     "GetStarted": MessageLookupByLibrary.simpleMessage("ابدأ ألان!"),
     "Log_in": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "Log_into_your_account": MessageLookupByLibrary.simpleMessage(
       "تسجيل الدخول في حسابك",
     ),
+    "Name_must_be_at_least_3_characters": MessageLookupByLibrary.simpleMessage(
+      "اسم يجب ان يكون اكثر من 3 حروف",
+    ),
+    "Name_must_contain_only_letters_and_spaces":
+        MessageLookupByLibrary.simpleMessage(
+          "اسم يجب ان يحتوي على حروف فقط ومسافات فقط",
+        ),
+    "Name_required": MessageLookupByLibrary.simpleMessage("اسم مطلوب"),
     "Next": MessageLookupByLibrary.simpleMessage("التالي"),
+    "Phone_must_be_at_least_11_characters":
+        MessageLookupByLibrary.simpleMessage(
+          "رقم الهاتف يجب ان يكون اكثر من 11 حرف",
+        ),
+    "Phone_must_be_valid": MessageLookupByLibrary.simpleMessage(
+      "رقم الهاتف يجب ان يكون صالح",
+    ),
+    "Phone_required": MessageLookupByLibrary.simpleMessage("رقم الهاتف مطلوب"),
     "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
+    "Role_required": MessageLookupByLibrary.simpleMessage("نوع مطلوب"),
     "SMS_Code": MessageLookupByLibrary.simpleMessage("رمز SMS"),
     "Save": MessageLookupByLibrary.simpleMessage("حفظ"),
+    "SelectRole": MessageLookupByLibrary.simpleMessage("اختر نوعك"),
     "Sign_up": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
     "Skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
@@ -52,6 +88,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "create_your_account": MessageLookupByLibrary.simpleMessage(
       "انشاء حساب جديد",
     ),
+    "driver": MessageLookupByLibrary.simpleMessage("سائق"),
+    "isAvailable": MessageLookupByLibrary.simpleMessage("متوفر"),
     "onboardingsubtitle1": MessageLookupByLibrary.simpleMessage(
       "طلب رحلة واستلامها من سائق مجاور",
     ),
@@ -65,5 +103,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingtitle2": MessageLookupByLibrary.simpleMessage("استلام الرحلة"),
     "onboardingtitle3": MessageLookupByLibrary.simpleMessage("تقييم السائق"),
     "or": MessageLookupByLibrary.simpleMessage("او"),
+    "rider": MessageLookupByLibrary.simpleMessage("راكب"),
   };
 }

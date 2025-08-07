@@ -27,6 +27,25 @@
     "continue_with_google": "Continue with Google",
     "continue_with_apple": "Continue with Apple",
     
-    "SMS_Code": "SMS Code"
+    "SMS_Code": "SMS Code", 
+
+    "EnterYourName": "Enter your name",
+    "EnterYourEmail": "Enter your email",
+    "EnterYourPhone": "Enter your Phone",
+    "isAvailable": "Available",
+    "SelectRole": "Select Role",
+    "rider": "Rider",
+    "driver": "Driver",
+    "Name_required": "Name required",
+    "Email_required": "Email required",
+    "Phone_required": "Phone required",
+    "Role_required": "Role required",
+    "Name_must_be_at_least_3_characters": "Name must be at least 3 characters",
+    "Email_must_be_valid": "Email must be valid",
+    "Phone_must_be_valid": "Phone must be valid",
+    "Name_must_contain_only_letters_and_spaces": "Name must contain only letters and spaces",
+    "Email_must_contain_only_letters_and_spaces": "Email must contain only letters and spaces",
+    "Email_must_be_at_least_6_characters": "Email must be at least 6 characters",
+    "Phone_must_be_at_least_11_characters": "Phone must be at least 11 characters"
 
 }

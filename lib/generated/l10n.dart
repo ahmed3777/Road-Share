@@ -243,6 +243,166 @@ class S {
   String get SMS_Code {
     return Intl.message('SMS Code', name: 'SMS_Code', desc: '', args: []);
   }
+
+  /// `Enter your name`
+  String get EnterYourName {
+    return Intl.message(
+      'Enter your name',
+      name: 'EnterYourName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your email`
+  String get EnterYourEmail {
+    return Intl.message(
+      'Enter your email',
+      name: 'EnterYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your Phone`
+  String get EnterYourPhone {
+    return Intl.message(
+      'Enter your Phone',
+      name: 'EnterYourPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Available`
+  String get isAvailable {
+    return Intl.message('Available', name: 'isAvailable', desc: '', args: []);
+  }
+
+  /// `Select Role`
+  String get SelectRole {
+    return Intl.message('Select Role', name: 'SelectRole', desc: '', args: []);
+  }
+
+  /// `Rider`
+  String get rider {
+    return Intl.message('Rider', name: 'rider', desc: '', args: []);
+  }
+
+  /// `Driver`
+  String get driver {
+    return Intl.message('Driver', name: 'driver', desc: '', args: []);
+  }
+
+  /// `Name required`
+  String get Name_required {
+    return Intl.message(
+      'Name required',
+      name: 'Name_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email required`
+  String get Email_required {
+    return Intl.message(
+      'Email required',
+      name: 'Email_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone required`
+  String get Phone_required {
+    return Intl.message(
+      'Phone required',
+      name: 'Phone_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Role required`
+  String get Role_required {
+    return Intl.message(
+      'Role required',
+      name: 'Role_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name must be at least 3 characters`
+  String get Name_must_be_at_least_3_characters {
+    return Intl.message(
+      'Name must be at least 3 characters',
+      name: 'Name_must_be_at_least_3_characters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email must be valid`
+  String get Email_must_be_valid {
+    return Intl.message(
+      'Email must be valid',
+      name: 'Email_must_be_valid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone must be valid`
+  String get Phone_must_be_valid {
+    return Intl.message(
+      'Phone must be valid',
+      name: 'Phone_must_be_valid',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name must contain only letters and spaces`
+  String get Name_must_contain_only_letters_and_spaces {
+    return Intl.message(
+      'Name must contain only letters and spaces',
+      name: 'Name_must_contain_only_letters_and_spaces',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email must contain only letters and spaces`
+  String get Email_must_contain_only_letters_and_spaces {
+    return Intl.message(
+      'Email must contain only letters and spaces',
+      name: 'Email_must_contain_only_letters_and_spaces',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email must be at least 6 characters`
+  String get Email_must_be_at_least_6_characters {
+    return Intl.message(
+      'Email must be at least 6 characters',
+      name: 'Email_must_be_at_least_6_characters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone must be at least 11 characters`
+  String get Phone_must_be_at_least_11_characters {
+    return Intl.message(
+      'Phone must be at least 11 characters',
+      name: 'Phone_must_be_at_least_11_characters',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

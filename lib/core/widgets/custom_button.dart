@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:roadshare/core/app/app_color.dart';
 import 'package:roadshare/core/app/app_text_styles.dart';
-import 'package:roadshare/generated/l10n.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, required this.onPress});
+  const CustomButton({super.key, required this.onPress, required this.text});
   final VoidCallback onPress; 
+  final String text;
   @override
   Widget build(BuildContext context) {
     return  Container(
@@ -19,7 +19,7 @@ class CustomButton extends StatelessWidget {
                 onPressed: (){
                   onPress();
                 },
-                  child: Text(S.of(context).Continue, style: TextStyles.semiBold16.copyWith(color: AppColors.pureWhite),),
+                  child: Text(text, style: TextStyles.semiBold16.copyWith(color: AppColors.pureWhite),),
                   
                    ),
              );
