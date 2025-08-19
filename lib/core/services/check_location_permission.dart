@@ -13,7 +13,8 @@ class CheckLocationPermission {
       bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) {
         return CheckLocationPermission(
-            errorMessage: 'Location services are disabled. Please enable location services.'
+          errorMessage:
+              'Location services are disabled. Please enable location services.',
         );
       }
 
@@ -23,29 +24,33 @@ class CheckLocationPermission {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
           return CheckLocationPermission(
-              errorMessage: 'Location permissions are denied. Please allow location access.'
+            errorMessage:
+                'Location permissions are denied. Please allow location access.',
           );
         }
       }
 
       if (permission == LocationPermission.deniedForever) {
         return CheckLocationPermission(
-            errorMessage: 'Location permissions are permanently denied. Please enable in settings.'
+          errorMessage:
+              'Location permissions are permanently denied. Please enable in settings.',
         );
       }
 
       // Get current position with optimized settings
       Position position = await Geolocator.getCurrentPosition(
-          locationSettings: LocationSettings(
-            accuracy: LocationAccuracy.bestForNavigation,
-            distanceFilter: 100
-          )
+        locationSettings: LocationSettings(
+          accuracy: LocationAccuracy.bestForNavigation,
+          distanceFilter: 100,
+        ),
       );
       return CheckLocationPermission(position: position);
     } catch (e) {
       return CheckLocationPermission(
-          errorMessage: 'Error getting location: $e'
+        errorMessage: 'Error getting location: $e',
       );
     }
   }
+
+ 
 }

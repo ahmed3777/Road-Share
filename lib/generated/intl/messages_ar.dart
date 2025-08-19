@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
     "Continue": MessageLookupByLibrary.simpleMessage("استمر"),
+    "Destination": MessageLookupByLibrary.simpleMessage("موقع نهاية الرحلة"),
     "Done": MessageLookupByLibrary.simpleMessage("تم"),
     "DontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "ليس لديك حساب؟ ",
@@ -69,16 +70,23 @@ class MessageLookup extends MessageLookupByLibrary {
       "رقم الهاتف يجب ان يكون صالح",
     ),
     "Phone_required": MessageLookupByLibrary.simpleMessage("رقم الهاتف مطلوب"),
+    "PickupDate": MessageLookupByLibrary.simpleMessage("تاريخ بداية الرحلة"),
+    "PickupLocation": MessageLookupByLibrary.simpleMessage(
+      "موقع بداية الرحلة ",
+    ),
+    "PickupTime": MessageLookupByLibrary.simpleMessage("وقت بداية الرحلة"),
     "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
     "Role_required": MessageLookupByLibrary.simpleMessage("نوع مطلوب"),
     "SMS_Code": MessageLookupByLibrary.simpleMessage("رمز SMS"),
     "Save": MessageLookupByLibrary.simpleMessage("حفظ"),
+    "SelectLocation": MessageLookupByLibrary.simpleMessage("اختر الموقع"),
     "SelectRole": MessageLookupByLibrary.simpleMessage("اختر نوعك"),
     "Sign_up": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
     "Skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
       "مرحبا بك في Roadshare, ادخل التفاصيل التالية للمتابعة",
     ),
+    "cars": MessageLookupByLibrary.simpleMessage("cars"),
     "continue_with_apple": MessageLookupByLibrary.simpleMessage(
       "استمر بواسطة ابل",
     ),
@@ -89,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "انشاء حساب جديد",
     ),
     "driver": MessageLookupByLibrary.simpleMessage("سائق"),
+    "home": MessageLookupByLibrary.simpleMessage("Home"),
     "isAvailable": MessageLookupByLibrary.simpleMessage("متوفر"),
     "onboardingsubtitle1": MessageLookupByLibrary.simpleMessage(
       "طلب رحلة واستلامها من سائق مجاور",
@@ -103,6 +112,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboardingtitle2": MessageLookupByLibrary.simpleMessage("استلام الرحلة"),
     "onboardingtitle3": MessageLookupByLibrary.simpleMessage("تقييم السائق"),
     "or": MessageLookupByLibrary.simpleMessage("او"),
+    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+    "request_ride": MessageLookupByLibrary.simpleMessage("طلب رحلة"),
     "rider": MessageLookupByLibrary.simpleMessage("راكب"),
+    "rides": MessageLookupByLibrary.simpleMessage("Rides"),
   };
 }

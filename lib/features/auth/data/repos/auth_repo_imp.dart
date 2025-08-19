@@ -10,6 +10,7 @@ import 'package:roadshare/features/auth/domin/repos/auth_repo.dart';
 class AuthRepoImp implements AuthRepo {
   final FirebaseAuthService firebaseAuthService;
   final DatabaseServices databaseServices;
+  AppUser? _currentUser;
 
   AuthRepoImp({required this.firebaseAuthService,
     required this.databaseServices,
@@ -29,10 +30,14 @@ class AuthRepoImp implements AuthRepo {
         await addUserData(user: appUser);
       } else {
         final existingUser =  await getUserData(uid: appUser.uid);
+        _currentUser = existingUser; // تخزينه هنا
+
         return Right(existingUser);
 
       //  await  updateUserData(uid: appUser.uid, updatedFields: appUser.toJson()); 
       }
+             _currentUser = appUser; // تخزينه هنا
+
 
       return Right(appUser);
     } catch (e) {
@@ -140,4 +145,8 @@ class AuthRepoImp implements AuthRepo {
 
   }
 }
+
+  @override
+  // TODO: implement currentUser
+  AppUser? get currentUser => _currentUser ;
 }

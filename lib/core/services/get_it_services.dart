@@ -9,6 +9,7 @@ import 'package:roadshare/features/auth/data/repos/auth_repo_imp.dart';
 import 'package:roadshare/features/auth/domin/repos/auth_repo.dart';
 import 'package:roadshare/features/auth/presentation/cubit/profile/profile_cubit.dart';
 import 'package:roadshare/features/auth/presentation/cubit/sinIn_cubit/sign_in_cubit.dart';
+import 'package:roadshare/features/home/data/locationService.dart';
 import 'package:roadshare/features/home/presentation/cubit/cubit/home_cubit.dart';
 
 final GetIt getIt = GetIt.instance;
@@ -22,6 +23,9 @@ void setupGetIt() {
 
    getIt.registerLazySingleton<DatabaseServices>(
     () => FirestoreServices(),
+  );
+  getIt.registerLazySingleton<LocationService>(
+    () => LocationService(),
   );
   //getIt.registerLazySingleton<NotificationService>(
   //  () => NotificationService(getIt<ApiService>()),
@@ -46,11 +50,16 @@ void setupGetIt() {
   // getIt.registerLazySingleton<HomeRepo>(() => getIt<HomeRepoImp>());
   // getIt.registerLazySingleton<HomeRepoImp>(
   //     () => HomeRepoImp(apiService: getIt<ApiService>()));
-  getIt.registerFactory<HomeCubit>(() => HomeCubit());
+  getIt.registerFactory<HomeCubit>(() => HomeCubit(
+     getIt<LocationService>(),
+  ));
 
-    getIt.registerFactoryParam<ProfileCubit, AppUser, void>(
-      (user, _) => ProfileCubit(getIt<AuthRepo>(), user),
-    );
+    getIt.registerLazySingleton<ProfileCubit>(
+  () => ProfileCubit(
+    getIt<AuthRepo>(),
+    getIt<AuthRepo>().currentUser!, // هنا تجيب الـ user الحالي
+  ),
+);
   // getIt
   //     .registerFactory<CountriesCubit>(() => CountriesCubit(getIt<HomeRepo>()));
   // getIt.registerFactory<CitiesCubit>(() => CitiesCubit(getIt<HomeRepo>()));

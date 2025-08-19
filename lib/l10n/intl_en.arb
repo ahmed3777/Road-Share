@@ -29,6 +29,11 @@
     
     "SMS_Code": "SMS Code", 
 
+    "home": "Home",
+    "cars": "cars",
+    "profile": "Profile",
+    "rides": "Rides",
+
     "EnterYourName": "Enter your name",
     "EnterYourEmail": "Enter your email",
     "EnterYourPhone": "Enter your Phone",
@@ -46,6 +51,13 @@
     "Name_must_contain_only_letters_and_spaces": "Name must contain only letters and spaces",
     "Email_must_contain_only_letters_and_spaces": "Email must contain only letters and spaces",
     "Email_must_be_at_least_6_characters": "Email must be at least 6 characters",
-    "Phone_must_be_at_least_11_characters": "Phone must be at least 11 characters"
+    "Phone_must_be_at_least_11_characters": "Phone must be at least 11 characters",
+    "request_ride": "Request Ride",
+    "PickupLocation": "Pickup Location",
+    "Destination": "Destination",
+    "SelectLocation": "Select Location",
+    "PickupDate": "Pickup Date",
+    "PickupTime": "Pickup Time"
+    
 
 }

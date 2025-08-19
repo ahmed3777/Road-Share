@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:roadshare/features/auth/data/models/app_user.dart';
 import 'package:roadshare/features/auth/domin/repos/auth_repo.dart';
@@ -31,6 +32,7 @@ class ProfileCubit extends Cubit<ProfileState> {
       if (carModel != originalUser.vehicleInfo?.type) fields['type'] = carModel;
       if (carPlate != originalUser.vehicleInfo?.plateNumber)fields['plateNumber'] = carPlate;
       if (carColor != originalUser.vehicleInfo?.color)fields['color'] = carColor;
+      
     }
     if (fields.isEmpty) {
       emit(ProfileNoChanges());
@@ -46,4 +48,31 @@ class ProfileCubit extends Cubit<ProfileState> {
       (_) => emit(ProfileSuccess()),
     );
   }
+
+    Future<void> updataUserLocation(GeoPoint location, String address) async {
+    emit(ProfileLoading());
+    final result = await _repo.updateUserData(
+      uid: originalUser.uid,
+      updatedFields: {
+        'location':{
+           'location': location, // GeoPoint
+           'address': address,   // String
+        },
+        'lastLocationAt': DateTime.now().toIso8601String(), 
+      });
+    result.fold(
+      (failure) => emit(ProfileError(failure.errMessage)),
+      (_) => emit(ProfileSuccess()),
+    );
+  }
+
+  // Future<void> deleteProfile() async {
+  //   emit(ProfileLoading());
+  //   final result = await _repo.deleteUser(uid: originalUser.uid);
+  //   result.fold(
+  //     (failure) => emit(ProfileError(failure.errMessage)),
+  //     (_) => emit(ProfileSuccess()),
+  //   );
+  // }
+  
 }

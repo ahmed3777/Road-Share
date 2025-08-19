@@ -244,6 +244,26 @@ class S {
     return Intl.message('SMS Code', name: 'SMS_Code', desc: '', args: []);
   }
 
+  /// `Home`
+  String get home {
+    return Intl.message('Home', name: 'home', desc: '', args: []);
+  }
+
+  /// `cars`
+  String get cars {
+    return Intl.message('cars', name: 'cars', desc: '', args: []);
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message('Profile', name: 'profile', desc: '', args: []);
+  }
+
+  /// `Rides`
+  String get rides {
+    return Intl.message('Rides', name: 'rides', desc: '', args: []);
+  }
+
   /// `Enter your name`
   String get EnterYourName {
     return Intl.message(
@@ -402,6 +422,51 @@ class S {
       desc: '',
       args: [],
     );
+  }
+
+  /// `Request Ride`
+  String get request_ride {
+    return Intl.message(
+      'Request Ride',
+      name: 'request_ride',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pickup Location`
+  String get PickupLocation {
+    return Intl.message(
+      'Pickup Location',
+      name: 'PickupLocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Destination`
+  String get Destination {
+    return Intl.message('Destination', name: 'Destination', desc: '', args: []);
+  }
+
+  /// `Select Location`
+  String get SelectLocation {
+    return Intl.message(
+      'Select Location',
+      name: 'SelectLocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pickup Date`
+  String get PickupDate {
+    return Intl.message('Pickup Date', name: 'PickupDate', desc: '', args: []);
+  }
+
+  /// `Pickup Time`
+  String get PickupTime {
+    return Intl.message('Pickup Time', name: 'PickupTime', desc: '', args: []);
   }
 }
 

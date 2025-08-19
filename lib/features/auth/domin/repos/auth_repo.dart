@@ -4,6 +4,7 @@ import 'package:roadshare/core/errors/failure.dart';
 import 'package:roadshare/features/auth/data/models/app_user.dart';
 
 abstract class AuthRepo {
+  AppUser? get currentUser;
 
 Future<Either<Failure, AppUser>> signinWithGoogle();
 

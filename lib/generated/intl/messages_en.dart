@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "Continue": MessageLookupByLibrary.simpleMessage("Continue"),
+    "Destination": MessageLookupByLibrary.simpleMessage("Destination"),
     "Done": MessageLookupByLibrary.simpleMessage("Done"),
     "DontHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Don’t have an account? ",
@@ -65,16 +66,21 @@ class MessageLookup extends MessageLookupByLibrary {
       "Phone must be valid",
     ),
     "Phone_required": MessageLookupByLibrary.simpleMessage("Phone required"),
+    "PickupDate": MessageLookupByLibrary.simpleMessage("Pickup Date"),
+    "PickupLocation": MessageLookupByLibrary.simpleMessage("Pickup Location"),
+    "PickupTime": MessageLookupByLibrary.simpleMessage("Pickup Time"),
     "ROADSHARE": MessageLookupByLibrary.simpleMessage("ROADSHARE"),
     "Role_required": MessageLookupByLibrary.simpleMessage("Role required"),
     "SMS_Code": MessageLookupByLibrary.simpleMessage("SMS Code"),
     "Save": MessageLookupByLibrary.simpleMessage("Save"),
+    "SelectLocation": MessageLookupByLibrary.simpleMessage("Select Location"),
     "SelectRole": MessageLookupByLibrary.simpleMessage("Select Role"),
     "Sign_up": MessageLookupByLibrary.simpleMessage("Sign up"),
     "Skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "Welcome_to_Roadshare": MessageLookupByLibrary.simpleMessage(
       "Welcome to Roadshare, enter your details below to continue ordering",
     ),
+    "cars": MessageLookupByLibrary.simpleMessage("cars"),
     "continue_with_apple": MessageLookupByLibrary.simpleMessage(
       "Continue with Apple",
     ),
@@ -85,6 +91,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Create your account",
     ),
     "driver": MessageLookupByLibrary.simpleMessage("Driver"),
+    "home": MessageLookupByLibrary.simpleMessage("Home"),
     "isAvailable": MessageLookupByLibrary.simpleMessage("Available"),
     "onboardingsubtitle1": MessageLookupByLibrary.simpleMessage(
       "Request a ride get picked up by a nearby community driver",
@@ -101,6 +108,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "onboardingtitle3": MessageLookupByLibrary.simpleMessage("Track your ride"),
     "or": MessageLookupByLibrary.simpleMessage("or"),
+    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+    "request_ride": MessageLookupByLibrary.simpleMessage("Request Ride"),
     "rider": MessageLookupByLibrary.simpleMessage("Rider"),
+    "rides": MessageLookupByLibrary.simpleMessage("Rides"),
   };
 }

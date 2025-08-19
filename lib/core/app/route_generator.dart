@@ -33,6 +33,8 @@ class RouteGenerator {
         case SignupView.routeName: return MaterialPageRoute(builder: (_) => const SignupView());
 
         case HomeView.routeName: return MaterialPageRoute(builder: (_) => const HomeView());
+        
+
 
    case OtpView.routeName:
         // ✅ استقبال الـ arguments بأمان

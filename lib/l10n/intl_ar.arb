@@ -41,7 +41,15 @@
      "Name_must_contain_only_letters_and_spaces": "اسم يجب ان يحتوي على حروف فقط ومسافات فقط",
      "Email_must_contain_only_letters_and_spaces": "البريد الالكتروني يجب ان يحتوي على حروف فقط ومسافات فقط",
      "Email_must_be_at_least_6_characters": "البريد الالكتروني يجب ان يكون اكثر من 6 حروف",
-     "Phone_must_be_at_least_11_characters": "رقم الهاتف يجب ان يكون اكثر من 11 حرف"
-
-
+     "Phone_must_be_at_least_11_characters": "رقم الهاتف يجب ان يكون اكثر من 11 حرف",
+      "request_ride": "طلب رحلة",
+      "PickupLocation": "موقع بداية الرحلة ",
+    "Destination": "موقع نهاية الرحلة", 
+    "SelectLocation":  "اختر الموقع",
+    "PickupDate":   "تاريخ بداية الرحلة",
+    "PickupTime":   "وقت بداية الرحلة",
+    "home": "Home",
+    "cars": "cars",
+    "profile": "Profile",
+    "rides": "Rides"
 }

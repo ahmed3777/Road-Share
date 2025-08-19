@@ -1,7 +1,5 @@
-
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
+import 'package:roadshare/features/auth/data/models/location.dart';
 import 'vehicle_info.dart';
 
 class AppUser {
@@ -12,7 +10,7 @@ class AppUser {
   final String? photoUrl;
   final String? role; // 'driver' or 'rider'
   final String? createdAt;
-  final GeoPoint? location;
+  final LocationInfo? locationInfo;
   final bool? isAvailable;
   final VehicleInfo? vehicleInfo;
   final double? rating;
@@ -26,7 +24,7 @@ class AppUser {
     this.photoUrl,
     this.role,
     this.createdAt,
-    this.location,
+    this.locationInfo,
     this.isAvailable,
     this.vehicleInfo,
     this.rating,
@@ -43,7 +41,9 @@ class AppUser {
       photoUrl: json['photoUrl'],
       role: json['role'],
       createdAt: json['createdAt'],
-      location: json['location'],
+      locationInfo: json['location'] != null
+          ? LocationInfo.fromJson(Map<String, dynamic>.from(json['location']))
+          : null,
       isAvailable: json['isAvailable'],
       vehicleInfo: json['vehicleInfo'] != null
           ? VehicleInfo.fromJson(Map<String, dynamic>.from(json['vehicleInfo']))
@@ -63,7 +63,7 @@ class AppUser {
       'photoUrl': photoUrl,
       'role': role,
       'createdAt': createdAt,
-      'location': location,
+      'location': locationInfo?.toJson(),
       'isAvailable': isAvailable,
       'vehicleInfo': vehicleInfo?.toJson(),
       'rating': rating,
@@ -79,7 +79,7 @@ class AppUser {
     String? photoUrl,
     String? role,
     String? createdAt,
-    GeoPoint? location,
+    LocationInfo? locationInfo,
     bool? isAvailable,
     VehicleInfo? vehicleInfo,
     double? rating,
@@ -93,7 +93,7 @@ class AppUser {
       photoUrl: photoUrl ?? this.photoUrl,
       role: role ?? this.role,
       createdAt: createdAt ?? this.createdAt,
-      location: location ?? this.location,
+      locationInfo: locationInfo ?? this.locationInfo,
       isAvailable: isAvailable ?? this.isAvailable,
       vehicleInfo: vehicleInfo ?? this.vehicleInfo,
       rating: rating ?? this.rating,
@@ -113,7 +113,7 @@ class AppUser {
       totalTrips: 0,
       isAvailable: false,
       vehicleInfo: null,
-      location: null,
+      locationInfo: null,
       createdAt: DateTime.now().toIso8601String(),
     );
   }
